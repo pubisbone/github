@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<table border>  
+<tr>
+    <th>t_year</th>
+    <th>t_month</th>
+    <th>t_day</th>
+    <th>t_hour</th>
+    <th>t_min</th>
+    <th>humidity</th>
+    <th>temperature</th>
+<th>
+</tr>
+{%  for row in data %}
+<tr>
+    {% for col in row %}
+        <td>{{col}}</td>
+    {% endfor %}
+</tr>  
+{% endfor %}
+
+</table>
+</body>
+</html>
